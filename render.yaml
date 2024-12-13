@@ -3,5 +3,5 @@ services:
     name: CVisionary
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npm run start
-    staticPublishPath: build
+    startCommand: serve -s build
+    plan: free
