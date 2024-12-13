@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: your-app-name
+    name: CVisionary
     env: node
-    buildCommand: npm install
+    buildCommand: npm install && npm run build
     startCommand: npm run start
-    deploy:
-      branch: main
-    staticPublishPath: /build
+    staticPublishPath: build
